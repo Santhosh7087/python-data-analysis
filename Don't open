@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Revathi!</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Comic Sans MS', cursive;
+        background: linear-gradient(to right, #ff9a9e, #fad0c4);
+        overflow: hidden;
+        text-align: center;
+        color: #fff;
+    }
+
+    h1 {
+        margin-top: 50px;
+        font-size: 50px;
+        animation: glow 2s infinite alternate;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 22px;
+        margin: 20px;
+    }
+
+    @keyframes glow {
+        from { text-shadow: 0 0 10px #fff; }
+        to { text-shadow: 0 0 25px #ff4081, 0 0 35px #ff4081; }
+    }
+
+    .balloon {
+        width: 60px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -100px;
+        animation: float 10s infinite;
+    }
+
+    .balloon:after {
+        content: '';
+        width: 2px;
+        height: 40px;
+        background: white;
+        position: absolute;
+        left: 50%;
+        top: 80px;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-110vh); }
+    }
+
+    .b1 { left: 10%; background: red; animation-duration: 8s; }
+    .b2 { left: 25%; background: blue; animation-duration: 10s; }
+    .b3 { left: 40%; background: yellow; animation-duration: 7s; }
+    .b4 { left: 55%; background: green; animation-duration: 9s; }
+    .b5 { left: 70%; background: purple; animation-duration: 11s; }
+    .b6 { left: 85%; background: orange; animation-duration: 6s; }
+
+    .container {
+        position: relative;
+        z-index: 10;
+    }
+
+    .cake {
+        font-size: 80px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎉 Happy 27th Birthday 🎉</h1>
+    <h2>Dear Revathi 💖</h2>
+    <p>
+        Wishing you a day filled with happiness, laughter, and joy!  
+        May your year ahead be as amazing and wonderful as you are 🌸✨
+    </p>
+    <p>
+        Keep smiling, keep shining, and keep inspiring everyone around you! 💫
+    </p>
+    <div class="cake">🎂</div>
+</div>
+
+<div class="balloon b1"></div>
+<div class="balloon b2"></div>
+<div class="balloon b3"></div>
+<div class="balloon b4"></div>
+<div class="balloon b5"></div>
+<div class="balloon b6"></div>
+
+</body>
+</html>
